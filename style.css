@@ -26,7 +26,7 @@ header > nav > ul{
 }
 header > nav > ul >li{
     list-style-type: none;
-    display: inline;
+    cursor: pointer;
     padding: 20px 20px;
     margin: 10px;
     border-radius: 10px;
@@ -38,4 +38,67 @@ header > nav > ul >li{
 header>nav>ul>li:hover{
     color: white;
     background-color: #233DFF;
+}
+.intro{
+    display: flex;
+    flex-direction: row;
+    margin: 0 50px;
+    text-align: center;
+    height: 700px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.intro > .breif > h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    color: #161C4B;
+}
+.intro > .breif > p{margin-bottom: 5px;}
+.intro > .breif > nav{margin: 20px 0;}
+.intro>.breif> nav> a > i{
+    margin:  0 20px;
+    font-size: 30px;
+}
+.intro>.breif>nav>a>i:nth-child(1){margin-left: 0;}
+.intro > .breif > a{
+    background-color: #233DFF;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    display: block;
+    width: fit-content;
+}
+.intro > .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.intro > .image > img{
+    max-height: 550px;
+
+}
+.intro > .image::before{
+    content: "";
+    height: 550px;
+    width: 50px;
+    background-color:#233DFF;
+    position: absolute;
+    right: -50px;
+    border-radius: 20px;
+    z-index: -1;
+    bottom: -40px;
+}
+.intro > .image::after{
+    content: "";
+    height: 50px;
+    width: 500px;
+    background-color:#233DFF;
+    position: absolute;
+    border-radius: 20px;
+    z-index: -1;
+    bottom: -50px;
+    right: -50px;
 }
