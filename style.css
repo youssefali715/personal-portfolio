@@ -114,7 +114,7 @@ header>nav>ul>li:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 100px 50px 0px;
+    margin: 50px 50px 0px;
 }
 
 .about>.image {
@@ -179,7 +179,7 @@ header>nav>ul>li:hover {
     background-image: url("imgs/microsoft_logo.png");
     background-size: contain;
     display: flex;
-    height: 200px;
+    height: 150px;
     align-items: center;
     justify-content: center;
     transition: all .8s;
@@ -377,6 +377,40 @@ footer>nav>a>i {
     }
 }
 
+@media (max-width: 992px) {
+    * {
+        font-size: 15px;
+    }
+
+    .intro>.breif>a,
+    .about>.text>a,
+    .portfolio>.container>.example>a,
+    .blog>.container>.post>a,
+    .hire>form>input[type="submit"] {
+        padding: 15px !important;
+    }
+
+    header>img {
+        height: 100px;
+    }
+
+    .intro>.breif>h1 {
+        font-size: 40px;
+    }
+
+    .intro>.breif>nav>a>i {
+        font-size: 25px;
+    }
+
+    .portfolio>.container>.example>.image {
+        height: calc(150px + 1em);
+    }
+
+    .about>.image>img {
+        max-height: 250px;
+    }
+}
+
 @media (max-width: 768px) {
     * {
         font-size: 15px;
@@ -400,5 +434,13 @@ footer>nav>a>i {
 
     .intro>.breif>nav>a>i {
         font-size: 25px;
+    }
+
+    .portfolio>.container>.example>.image {
+        height: calc(150px + 1em);
+    }
+
+    .about>.image>img {
+        max-height: 250px;
     }
 }
